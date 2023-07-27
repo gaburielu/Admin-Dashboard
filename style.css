@@ -65,6 +65,7 @@ body {
   grid-template-columns: 1fr 3fr 2fr;
   grid-template-areas: "logo search links";
   text-align: center;
+  column-gap: var(--space-m-l);
 }
 
 .logo {
@@ -157,22 +158,17 @@ input[type="search"] {
   grid-area: main;
   display: grid;
   padding: 10px;
-  margin: 0px 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
-  overflow: hidden;
-  margin: 5px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
   grid-template-rows: 1fr 5fr;
   grid-template-areas:
     "hd hd mnoti mnoti"
     "mimg1 mimg2 mnoti mnoti";
 }
 .main img {
-  width: clamp(300px, 2rem, 800px);
-  height: clamp(300px, 2rem, 800px);
+  width: clamp(250px, 2rem, 800px);
+  height: clamp(250px, 2rem, 800px);
   border: 5px var(--qua-clr) solid;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
